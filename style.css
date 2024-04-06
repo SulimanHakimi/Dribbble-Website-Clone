@@ -3,7 +3,170 @@
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 body {
   font-family: "Roboto", sans-serif;
+  background-color: #f8f7f4;
+}
+.padding {
+  padding: 0 5vw;
+}
+nav {
+  margin: 2vw 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+/* slider */
+section {
+  user-select: none;
+  display: flex;
+  height: 70vh;
+  align-items: center;
+  justify-content: center;
+}
+div.highway-slider {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 70vh;
+  div.highway-barrier {
+    overflow: hidden;
+    position: relative;
+  }
+  ul.highway-lane {
+    display: flex;
+    height: 100%;
+    div.highway-car {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+@keyframes translatestf {
+  0% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(-500%);
+  }
+}
+#stffull div.highway-barrier {
+  ul.highway-lane {
+    gap: 40px;
+    div.highway-car {
+      animation: translatestf 30s linear infinite;
+    }
+  }
+}
+/* slider finished */
+.card-images-second div {
+  width: 280px;
+  height: 55vh;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 30px;
+  display: flex;
+}
+.text-conteinar {
+  border-radius: 0%;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: end;
+  gap: 10px;
+  font-size: 15px;
+  padding: 20px;
+}
+.text-conteinar div {
+  font-size: 13px;
+  border-radius: 0%;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.list {
+  border-radius: 20px;
+  padding: 7px 15px;
+  border: 1px solid rgba(199, 199, 199, 0.438);
+}
+.text-conteinar .name-title {
+  display: flex;
+  flex-direction: column;
+}
+.card-images-second-2 div {
+  width: 200px;
+  height: 25vh;
+  background-position: center;
+  background-size: cover;
+  padding: 10px;
+  border-radius: 5px;
+}
+footer {
+  height: 80vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 5vh 0px;
+  justify-content: space-between;
+}
+.sec-footer {
+  height: 30vh;
+}
+.nav-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-footer ul {
+  display: flex;
+  align-items: center;
+}
+.nav-footer ul li {
+  cursor: pointer;
+}
+.nav-foot-icons {
+  gap: 15px;
+  font-size: 22px;
+}
+.nav-ul-foot {
+  font-size: 14px;
+  font-weight: 500;
+  gap: 50px;
+}
+.footer-footer {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+}
+.footer-footer ul {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.footer-footer ul li {
+  cursor: pointer;
+  color: #707070;
+}
+.footer-footer-end {
+  gap: 25px;
 }
