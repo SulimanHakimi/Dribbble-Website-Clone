@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
+@font-face {
+  font-family: myFont;
+  src: url("./font/Mona-Sans-Regular.woff");
+}
 * {
   padding: 0%;
   margin: 0%;
@@ -7,14 +11,13 @@
   text-decoration: none;
 }
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "myFont", sans-serif;
   background-color: #f8f7f4;
 }
 .padding {
   padding: 0 5vw;
 }
 nav {
-  margin: 2vw 0 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,10 +27,16 @@ nav ul {
   justify-content: center;
   align-items: center;
 }
+nav ul li {
+  cursor: pointer;
+}
+.dropbtn {
+  cursor: pointer;
+}
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 /* slider */
 section {
@@ -50,6 +59,7 @@ div.highway-slider {
   ul.highway-lane {
     display: flex;
     height: 100%;
+    align-items: center;
     div.highway-car {
       flex: 1;
       display: flex;
@@ -122,12 +132,16 @@ div.highway-slider {
   padding: 10px;
   border-radius: 5px;
 }
+.card-images-second-2:hover {
+  cursor: pointer;
+}
+
 footer {
-  height: 80vh;
+  height: 85vh;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 5vh 0px;
+  padding: 6vh 0px;
   justify-content: space-between;
 }
 .sec-footer {
@@ -140,9 +154,6 @@ footer {
 .nav-footer ul {
   display: flex;
   align-items: center;
-}
-.nav-footer ul li {
-  cursor: pointer;
 }
 .nav-foot-icons {
   gap: 15px;
@@ -158,6 +169,7 @@ footer {
   font-size: 14px;
   justify-content: space-between;
 }
+
 .footer-footer ul {
   display: flex;
   gap: 15px;
@@ -169,4 +181,170 @@ footer {
 }
 .footer-footer-end {
   gap: 25px;
+}
+.hidden {
+  display: none;
+}
+.fourth-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Source Serif 4", serif;
+  background-color: rgba(255, 218, 121);
+}
+.fourth-page div {
+  max-width: 600px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.title-fourth {
+  font-size: 64px;
+  line-height: 70px;
+}
+
+.buttons-list {
+  display: flex;
+  width: fit-content;
+}
+.buttons-list button {
+  padding: 6px 15px;
+}
+.buttons-list button :first-child {
+  background: #000;
+  color: #fff;
+}
+/* drop down */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  color: rgb(0, 0, 0);
+  padding: 14px 16px;
+  margin: 20px 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 250px;
+  min-height: 150px;
+  border-radius: 20px;
+  padding: 15px 20px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  cursor: pointer;
+  color: black;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.down-text {
+  color: #7e7e7e;
+  font-size: 12px;
+}
+.last {
+  border-top: 1px solid gray;
+}
+.third-page {
+  min-height: 100vh;
+  padding: 50px 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.last-btn-third {
+  padding: 15px 25px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 50px;
+  font-size: 14px;
+}
+.last-btn-third:hover {
+  color: rgba(0, 0, 0, 0.522);
+  border: 1px solid rgba(0, 0, 0, 0.522);
+}
+.card {
+  max-height: 250px;
+  max-width: 250px;
+}
+.foot-card {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+}
+.card-image {
+  border-radius: 5px;
+  max-width: 250px;
+  overflow: hidden;
+}
+.foot-card div {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.profile {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+}
+.cards-div {
+  margin: 50px 0px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.name-el {
+  font-size: 14px;
+}
+
+.first-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  flex-direction: column;
+}
+.top-text {
+  background-color: cadetblue;
+  border-radius: 40px;
+  padding: 15px 20px;
+}
+.first-title{
+  text-align: center;
+  max-width: 65%;
+  font-size: 70px;
+}
+.sub-title-first{
+  font-size: 20px;
+}
+.btn-active{
+  padding: 15px 30px;
+  font-weight: bold;
+  background: #000;
+  color: white;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
 }
