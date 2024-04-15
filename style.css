@@ -21,12 +21,35 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.right-nav{
+  display: flex;
+  align-items: center;
+}
+.btn {
+  padding: 15px 30px;
+  font-weight: bold;
+  background-color: inherit;
+  cursor: pointer;
+  border: none;
+}
+.btn:hover{
+  color: rgba(0, 0, 0, 0.79);
+}
+.right-nav input{
+  outline: none;
+  border: none;
+  background-color: #fff;
+  padding: 15px 25px;
+  border-radius: 30px;
+}
+
 nav ul li {
   cursor: pointer;
 }
@@ -331,15 +354,15 @@ footer {
   border-radius: 40px;
   padding: 15px 20px;
 }
-.first-title{
+.first-title {
   text-align: center;
   max-width: 65%;
   font-size: 70px;
 }
-.sub-title-first{
+.sub-title-first {
   font-size: 20px;
 }
-.btn-active{
+.btn-active {
   padding: 15px 30px;
   font-weight: bold;
   background: #000;
@@ -347,4 +370,8 @@ footer {
   cursor: pointer;
   border-radius: 30px;
   border: none;
+}
+.btn-active:hover{
+  background: rgba(0, 0, 0, 0.89);
+  color: rgba(255, 255, 255, 0.834);
 }
